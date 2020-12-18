@@ -1,5 +1,4 @@
-export const deleteTODO = (payload: any) => ({
-    type: 'DELETE_TODO',
-    payload,
-
+export const deleteTODO = (payload: string) => ({
+  type: 'DELETE_TODO',
+  payload: { id: payload },
 });

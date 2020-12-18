@@ -1,6 +1,15 @@
-const initialState = {
-    todos: [
-    ],
+export interface ITodo {
+  id: number;
+  taskName: string;
+  done: boolean;
 }
 
-export default initialState
+export interface IInitial {
+  todos: ITodo[];
+}
+
+const initialState: IInitial = {
+  todos: [],
+};
+
+export default initialState;
