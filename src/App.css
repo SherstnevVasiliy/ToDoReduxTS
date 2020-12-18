@@ -1,0 +1,81 @@
+li {
+  list-style-type: none; /* Убираем маркеры */
+ }
+ ul {
+  margin-top: 5px; /* Отступ слева в браузере IE и Opera */
+  padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+ }
+
+
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+  text-align: -webkit-center;
+  padding: 10px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.input-wrap{
+  flex: 5;
+}
+
+.input {
+  width: -webkit-fill-available;
+}
+
+.todo-item {
+  text-align: left;
+  cursor: pointer;
+  background-color:cadetblue;
+  margin-bottom: 2px;
+  padding: 3px;
+  border-radius: 3px;
+  width: -webkit-fill-available;
+}
+
+.todo-item-done {
+  text-align: left;
+  cursor: pointer;
+  background-color:rgb(6, 74, 77);
+  margin-bottom: 2px;
+  padding: 3px;
+  border-radius: 3px;
+  width: -webkit-fill-available;
+  text-decoration-line: line-through;
+  color: white;
+}
+
+.no-todo-item {
+  text-align: center;
+  color: brown;
+}
+
+.todo-item-wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.btn-delete {
+  background-color: red;
+  margin-bottom: 2px;
+  padding: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+  color: white;
+  width: 30px;
+}
+
+.btn {
+  background-color: darkcyan;
+  color: white;
+  padding: 2px;
+  margin: 0;
+  border-radius: 3px;
+  border: solid 1px gray;
+}
